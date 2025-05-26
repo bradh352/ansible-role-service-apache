@@ -97,7 +97,7 @@
     persistent: yes
 
 - name: SELinux module for mod_md (needed for letsencrypt)
-  import_tasks: "{{ playbook_dir }}/common/tasks/semodule.yml"
+  import_tasks: "semodule.yml"
   vars:
     selinux_module_name: httpd-md
     selinux_module_file: selinux_httpd_mod_md.pp
