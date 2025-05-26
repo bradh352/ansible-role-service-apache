@@ -19,7 +19,7 @@
     - "80/tcp"
     - "443/tcp"
 
-- include_tasks: "{{ playbook_dir }}/common/tasks/commentfile.yml"
+- include_tasks: "commentfile.yml"
   loop_control:
     loop_var: commentfile
   with_items:
